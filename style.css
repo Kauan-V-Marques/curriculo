@@ -215,6 +215,7 @@ h2 {
 .item ul:not(.tags) li::marker { color: var(--muted); }
 
 .note { color: var(--muted); margin-bottom: 10px !important; }
+.item + .note { margin-top: 18px !important; }
 
 .timeline li {
   display: grid;

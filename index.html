@@ -53,7 +53,11 @@
         </ul>
         <h3><span class="pt">Frameworks e bibliotecas</span><span class="en">Frameworks &amp; libraries</span></h3>
         <ul class="tags">
-          <li>.NET</li><li>Flask</li><li>OpenCV</li><li>NumPy</li><li>Machine Learning</li>
+          <li>.NET</li><li>Spring Boot</li><li>Flask</li><li>OpenCV</li><li>NumPy</li><li>pandas</li><li>scikit-learn</li>
+        </ul>
+        <h3><span class="pt">Bancos de dados</span><span class="en">Databases</span></h3>
+        <ul class="tags">
+          <li>SQL</li><li>MariaDB / MySQL</li><li>PostgreSQL</li><li>MongoDB</li>
         </ul>
         <h3><span class="pt">Hardware e mecânica</span><span class="en">Hardware &amp; mechanics</span></h3>
         <ul class="tags">
@@ -61,7 +65,7 @@
         </ul>
         <h3><span class="pt">Ferramentas</span><span class="en">Tools</span></h3>
         <ul class="tags">
-          <li>Git</li><li>GitHub Actions</li><li>Linux</li><li>Jupyter</li><li>Excel (VBA)</li><li>Power BI</li><li>SAP</li><li>Salesforce</li><li>Office</li><li>Photoshop</li><li><span class="pt">Edição de vídeo</span><span class="en">Video editing</span></li>
+          <li>Git</li><li>GitHub Actions</li><li>Docker</li><li>Linux</li><li>Jupyter</li><li>PlatformIO</li><li>Excel (VBA)</li><li>Power BI</li><li>SAP</li><li>Salesforce</li><li>Office</li><li>Photoshop</li><li><span class="pt">Edição de vídeo</span><span class="en">Video editing</span></li>
         </ul>
         <h3><span class="pt">Competências</span><span class="en">Soft skills</span></h3>
         <ul class="tags">
@@ -159,13 +163,62 @@
         </article>
         <article class="item">
           <header>
-            <h3><a href="https://github.com/Kauan-V-Marques/jogo-da-velha-c"><span class="pt">Jogo da Velha em C</span><span class="en">Tic-Tac-Toe in C</span></a></h3>
-            <span class="when">2023</span>
+            <h3><a href="https://github.com/Kauan-V-Marques/estoque-pcp-api"><span class="pt">API de Estoque e Produção (PCP)</span><span class="en">Inventory &amp; Production API</span></a></h3>
+            <span class="when">2026</span>
           </header>
-          <p class="pt">Jogo para dois jogadores no terminal, com validação de jogadas e detecção de vitória e empate. Compilado e testado automaticamente a cada alteração.</p>
-          <p class="en">Two-player terminal game with move validation and win/draw detection. Automatically built and tested on every change.</p>
-          <ul class="tags small"><li>C</li><li>GitHub Actions</li></ul>
+          <p class="pt">Estoque, lista de materiais e ordens de produção que consomem a matéria-prima e dão entrada no produto em uma única transação, com trava de linha contra concorrência.</p>
+          <p class="en">Inventory, bills of materials and production orders that consume raw materials and add finished goods in a single transaction, with row locking against concurrency.</p>
+          <ul class="tags small"><li>C#</li><li>.NET 10</li><li>MariaDB</li><li>Dapper</li><li>xUnit</li><li>Docker</li></ul>
         </article>
+        <article class="item">
+          <header>
+            <h3><a href="https://github.com/Kauan-V-Marques/reserva-labs-spring"><span class="pt">Reserva de Laboratórios</span><span class="en">Lab Booking API</span></a></h3>
+            <span class="when">2026</span>
+          </header>
+          <p class="pt">Reservas sem sobreposição garantidas por lock pessimista e por exclusion constraint no PostgreSQL, com cálculo dos horários livres do dia.</p>
+          <p class="en">Overlap-free bookings enforced by a pessimistic lock and a PostgreSQL exclusion constraint, plus daily availability.</p>
+          <ul class="tags small"><li>Java 25</li><li>Spring Boot 4</li><li>PostgreSQL</li><li>Flyway</li><li>JUnit</li></ul>
+        </article>
+        <article class="item">
+          <header>
+            <h3><a href="https://github.com/Kauan-V-Marques/robotica-api-flask"><span class="pt">API e Painel de Competições de Robótica</span><span class="en">Robotics Competition API &amp; Dashboard</span></a></h3>
+            <span class="when">2026</span>
+          </header>
+          <p class="pt">Ranking de sumô e seguidor de linha calculado por pipelines de agregação no MongoDB, exibido num <a href="https://kauan-v-marques.github.io/ranking-robotica-web/">painel web ao vivo</a>.</p>
+          <p class="en">Sumo and line-follower standings computed with MongoDB aggregation pipelines, shown in a <a href="https://kauan-v-marques.github.io/ranking-robotica-web/">live web dashboard</a>.</p>
+          <ul class="tags small"><li>Python</li><li>Flask</li><li>MongoDB</li><li>JavaScript</li></ul>
+        </article>
+        <article class="item">
+          <header>
+            <h3><a href="https://github.com/Kauan-V-Marques/seguidor-linha-pid"><span class="pt">Firmware de Seguidor de Linha</span><span class="en">Line Follower Firmware</span></a></h3>
+            <span class="when">2026</span>
+          </header>
+          <p class="pt">Controle PID com anti-windup, calibração dos sensores e máquina de estados para Arduino e ESP32, com a lógica testada no computador.</p>
+          <p class="en">PID control with anti-windup, sensor calibration and a state machine for Arduino and ESP32, with the logic tested on the PC.</p>
+          <ul class="tags small"><li>C++</li><li>Arduino</li><li>ESP32</li><li>PlatformIO</li></ul>
+        </article>
+        <article class="item">
+          <header>
+            <h3><a href="https://github.com/Kauan-V-Marques/previsao-falhas-ml"><span class="pt">Previsão de Falhas em Máquinas</span><span class="en">Machine Failure Prediction</span></a></h3>
+            <span class="when">2026</span>
+          </header>
+          <p class="pt">Manutenção preditiva com machine learning: antecipa 85% das falhas com 91% de precisão, servida por uma API.</p>
+          <p class="en">Predictive maintenance with machine learning: catches 85% of failures at 91% precision, served by an API.</p>
+          <ul class="tags small"><li>scikit-learn</li><li>pandas</li><li>Jupyter</li><li>Flask</li></ul>
+        </article>
+        <article class="item">
+          <header>
+            <h3><a href="https://github.com/Kauan-V-Marques/visao-computacional-opencv"><span class="pt">Visão Computacional para Robótica</span><span class="en">Computer Vision for Robotics</span></a></h3>
+            <span class="when">2026</span>
+          </header>
+          <p class="pt">Rastreamento de objetos por cor (HSV) e leitura de linha para robô seguidor com OpenCV.</p>
+          <p class="en">Color-based object tracking (HSV) and line reading for a line-follower robot with OpenCV.</p>
+          <ul class="tags small"><li>Python</li><li>OpenCV</li><li>NumPy</li></ul>
+        </article>
+        <p class="note">
+          <span class="pt">Mais: <a href="https://github.com/Kauan-V-Marques/oficina-sql-mariadb">banco de dados de oficina em SQL</a> (triggers, procedures e testes) e outros no <a href="https://github.com/Kauan-V-Marques">GitHub</a>.</span>
+          <span class="en">More: <a href="https://github.com/Kauan-V-Marques/oficina-sql-mariadb">SQL database for a repair shop</a> (triggers, procedures and tests) and others on <a href="https://github.com/Kauan-V-Marques">GitHub</a>.</span>
+        </p>
       </section>
 
       <section>
